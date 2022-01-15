@@ -4,7 +4,7 @@
 
 Name = Fiesta Online Price Checker ;Script name
 ;~ Currversion = 8 ;Versão atual do script para a janela de atualização
-version = 10   ;Versão atual do script
+version = 12   ;Versão atual do script
 
 UrlDownloadToFile, https://raw.githubusercontent.com/zzkamikaze/versao/main/MoradiaVersao.txt, MoradiaVersao.txt ;Downloads Version.ini file
 FileRead, new_version, MoradiaVersao.txt ;Reads the version.ini file to see what the new version is
@@ -22,14 +22,27 @@ Gui, Update:Add, Button, x52 y110 w43 h23 gYes, Yes                        ;If p
 Gui, Update:Add, Button, x102 y110 w43 h23 gHome, No                     ;Will skip the update and go to the main functions
 Gui, Update:Show, w190 h150, Update?                                     ;Update window title.
 }
-
+return
 
 Home:
+
+MsgBox,Fechando APP
+ExitApp
 
 return
 
 Yes:
  URLDownloadToFile, https://raw.githubusercontent.com/zzkamikaze/versao/main/autoupdate.ahk, autoupdate.ahk
  ;~ FileDelete C:\Users\Matheus\Desktop\x/upteste.ahk
+Gui, Cancel
+sleep, 5000
  msgbox, atualizado, atualizado,atualizado!
+ SLEEP,500
+ goto, MACRO1
 return
+
+
+MACRO1:
+
+MSGBOX,INICIANDO MACRO, INICIANDO MACRO
+RETURN
