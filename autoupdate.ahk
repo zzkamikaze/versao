@@ -4,7 +4,7 @@
 
 Name = Fiesta Online Price Checker ;Script name
 ;~ Currversion = 8 ;Versão atual do script para a janela de atualização
-version = 13   ;Versão atual do script
+version = 14  ;Versão atual do script
 
 UrlDownloadToFile, https://raw.githubusercontent.com/zzkamikaze/versao/main/MoradiaVersao.txt, MoradiaVersao.txt ;Downloads Version.ini file
 FileRead, new_version, MoradiaVersao.txt ;Reads the version.ini file to see what the new version is
@@ -22,11 +22,11 @@ Gui, Update:Add, Button, x52 y110 w43 h23 gYes, Yes                        ;If p
 Gui, Update:Add, Button, x102 y110 w43 h23 gHome, No                     ;Will skip the update and go to the main functions
 Gui, Update:Show, w190 h150, Update?                                     ;Update window title.
 }
-return
-if (new_version = version) ;se a versão for mais recente que a versão atual Peça para baixar a nova versão
-	{
+;~ return
+if (new_version = version) 
+{
      Goto, MacroExecutar
-    }
+ }
  return
  
 Home:
@@ -42,7 +42,7 @@ Gui, Cancel
 return
 
  MacroExecutar:
-sleep, 5000
+sleep, 1000
  msgbox, atualizado, atualizado,atualizado!
  SLEEP,500
 MSGBOX,INICIANDO MACRO, INICIANDO MACRO
