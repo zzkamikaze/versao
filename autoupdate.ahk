@@ -4,7 +4,7 @@
 
 Name = Fiesta Online Price Checker ;Script name
 ;~ Currversion = 8 ;Versão atual do script para a janela de atualização
-version = 14  ;Versão atual do script
+version = 16  ;Versão atual do script
 
 UrlDownloadToFile, https://raw.githubusercontent.com/zzkamikaze/versao/main/MoradiaVersao.txt, MoradiaVersao.txt ;Downloads Version.ini file
 FileRead, new_version, MoradiaVersao.txt ;Reads the version.ini file to see what the new version is
@@ -39,7 +39,7 @@ Yes:
  ;~ FileDelete C:\Users\Matheus\Desktop\x/upteste.ahk
 Gui, Cancel
   Goto, MacroExecutar
-  MSGBOX,INICIANDO MACRO, INICIANDO MACRO
+  MSGBOX,Atualizando, Atualizado,Atualizado by matheus
 return
 
  MacroExecutar:
