@@ -1,2 +1,2 @@
 [version]
-new_version=0.2
+new_version= 0.8
