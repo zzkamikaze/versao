@@ -43,7 +43,7 @@
 
 Name = Fiesta Online Price Checker ;Script name
 Currversion = 0.8 ;Versão atual do script para a janela de atualização
-version = 0.2    ;Versão atual do script
+version = 0.8    ;Versão atual do script
 
 
 UrlDownloadToFile, https://raw.githubusercontent.com/zzkamikaze/versao/main/MoradiaVersao.txt, MoradiaVersao.txt ;Downloads Version.ini file
@@ -63,7 +63,7 @@ Gui, Update:Show, w190 h200, Update?                                     ;Update
 
 
 Home:
-URLDownloadToFile, https://raw.githubusercontent.com/zzkamikaze/versao/main/upteste.ahk, Upteste.ahk
+URLDownloadToFile, https://raw.githubusercontent.com/zzkamikaze/versao/main/autoupdate.ahk, autoupdate.ahk
 ;~ FileDelete C:\Users\Matheus\Desktop\x/upteste.ahk
 return
 
