@@ -39,11 +39,10 @@ Yes:
  ;~ FileDelete C:\Users\Matheus\Desktop\x/upteste.ahk
 Gui, Cancel
   Goto, MacroExecutar
+  MSGBOX,INICIANDO MACRO, INICIANDO MACRO
 return
 
  MacroExecutar:
-sleep, 1000
- msgbox, atualizado, atualizado,atualizado!
  SLEEP,500
 MSGBOX,INICIANDO MACRO, INICIANDO MACRO
 return
@@ -51,5 +50,4 @@ return
 
 
 
-MSGBOX,INICIANDO MACRO, INICIANDO MACRO
-RETURN
+
