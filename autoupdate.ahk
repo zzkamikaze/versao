@@ -69,6 +69,6 @@ Home:
 return
 
 Yes:
-;~ URLDownloadToFile, https://raw.githubusercontent.com/zzkamikaze/versao/main/autoupdate.ahk, autoupdate.ahk
-;~ FileDelete C:\Users\Matheus\Desktop\x/upteste.ahk
+ URLDownloadToFile, https://raw.githubusercontent.com/zzkamikaze/versao/main/autoupdate.ahk, autoupdate.ahk
+ ;~ FileDelete C:\Users\Matheus\Desktop\x/upteste.ahk
 return
